@@ -1,15 +1,39 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import {
+  Intro,
+  Sidebar,
+  Studio,
+  Services,
+  Contact,
+  Footer,
+} from '../components'
+import '../css/main.css'
+import Styled from 'styled-components'
+
+const Wrapper = Styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+`
+const Inner = Styled.div`
+  @media (min-width: 1300px){
+    width: 75vw;
+  }
+`
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-    <br />
-    <Link to="/page-3">Page 3!</Link>
-  </div>
+  <Wrapper id="wrapper">
+    <Sidebar />
+    <Inner>
+      <Intro />
+      <Studio />
+      <Services />
+      <Contact />
+      <Footer />
+    </Inner>
+  </Wrapper>
 )
 
 export default IndexPage
