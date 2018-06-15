@@ -34,17 +34,23 @@ class IndexPage extends Component {
 
   render() {
     return (
-      <Wrapper id="wrapper">
-        <Sidebar />
-        <Inner>
-          <Intro />
-          <Studio />
-          <Services />
-          <EtsyStore />
-          <Contact />
-          <Footer />
-        </Inner>
-      </Wrapper>
+      <div>
+        <link
+          href="https://fonts.googleapis.com/css?family=EB+Garamond"
+          rel="stylesheet"
+        />
+        <Wrapper id="wrapper">
+          <Sidebar />
+          <Inner>
+            <Intro />
+            <Studio />
+            <Services />
+            <EtsyStore />
+            <Contact />
+            <Footer />
+          </Inner>
+        </Wrapper>
+      </div>
     )
   }
 }
