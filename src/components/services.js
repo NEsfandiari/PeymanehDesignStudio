@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 import Styled from 'styled-components'
 import Skill from './atoms/skill'
 
-const Container = Styled.div`
+const Header = Styled.h1`
+    margin-left: 23vw;
+    @media(min-width: 1280px) {
+        margin-left: 20vw
+    }
 `
 
 class Services extends Component {
@@ -20,11 +24,20 @@ class Services extends Component {
       />
     ))
     return (
-      <section id="two" className="wrapper style3 fade-up">
+      <section
+        id="two"
+        className="wrapper style3 "
+        data-aos="fade"
+        data-aos-delay="400"
+      >
         <div className="inner">
-          <h1>Peymaneh's Design Consulting</h1>
-          <h2>What I Can Do</h2>
-          <p>
+          <Header data-aos="zoom-in" data-aos-delay="200">
+            Design Services
+          </Header>
+          <h2 data-aos="zoom-in" data-aos-delay="200">
+            What I Can Do
+          </h2>
+          <p data-aos="zoom-in" data-aos-delay="100">
             Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
             turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
             lacus eget hendrerit bibendum, urna est aliquam sem, sit amet

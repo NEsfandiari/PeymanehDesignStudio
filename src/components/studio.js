@@ -2,7 +2,12 @@ import React, { Component } from 'react'
 import Styled from 'styled-components'
 import StudioSection from './atoms/studioSection'
 
-const Container = Styled.div`
+const Header = Styled.h1`
+    margin-left: 20vw;
+    margin-bottom: 0;
+    @media(min-width: 1280px) {
+        margin-left: 15vw
+    }
 `
 
 class Studio extends Component {
@@ -20,9 +25,17 @@ class Studio extends Component {
       />
     ))
     return (
-      <section id="one" className="wrapper style2 spotlights">
-        <div className="inner">
-          <h2>Peymaneh's Fashion Design Classes</h2>
+      <section
+        id="one"
+        className="wrapper style2 spotlights"
+        data-aos="fade"
+        data-aos-delay="300"
+      >
+        <div
+          className="inner"
+          style={{ paddingBottom: '10', paddingTop: '10' }}
+        >
+          <Header>Fashion Design Courses</Header>
         </div>
 
         {sections}

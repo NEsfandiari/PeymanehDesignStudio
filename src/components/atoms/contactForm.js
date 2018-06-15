@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AOS from 'aos'
 
 class ContactForm extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class ContactForm extends Component {
   }
   render() {
     return (
-      <section>
+      <section data-aos="fade-right" data-aos-delay="200">
         <form method="post" action="#">
           <div className="field half first">
             <label for="name">Name</label>

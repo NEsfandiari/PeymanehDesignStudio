@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Styled from 'styled-components'
 
 import ContactForm from './atoms/contactForm'
 import ContactInfo from './atoms/contactInfo'
@@ -11,7 +10,7 @@ class Contact extends Component {
   }
   render() {
     return (
-      <section id="three" className="wrapper style1 fade-up">
+      <section id="four" className="wrapper style1 fade-up" data-aos="fade">
         <div className="inner">
           <h2>Let's Chat!</h2>
           <p>

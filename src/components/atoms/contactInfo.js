@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from 'react-icons/lib/fa'
+import AOS from 'aos'
 
 class ContactInfo extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class ContactInfo extends Component {
   }
   render() {
     return (
-      <section>
+      <section data-aos="fade-left" data-aos-delay="200">
         <ul className="contact">
           <li>
             <h3>Address</h3>

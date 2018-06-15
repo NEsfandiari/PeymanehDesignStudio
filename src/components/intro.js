@@ -1,13 +1,24 @@
 import React, { Component } from 'react'
 import Styled from 'styled-components'
+import AOS from 'aos'
+import * as Scroll from 'react-scroll'
+
+const scroll = Scroll.scroller
 
 const Video = Styled.iframe`
     position: relative;
-    min-width: 75vw;
-    min-height: 80vh;
+    min-width: 93vw;
+    min-height: 100vh;
     margin: 0;
     padding:0;
-    opacity: .8;
+    opacity: .25;
+    z-index: -1;
+    @media (max-width: 736px){
+      opacity: 0
+    }
+`
+const Container = Styled.div`
+  position: absolute;
 `
 
 class Intro extends Component {
@@ -15,32 +26,59 @@ class Intro extends Component {
     super(props)
     this.state = {}
   }
+
+  componentDidMount() {
+    this.aos = AOS
+    this.aos.init()
+    this.aos.refresh()
+  }
+
+  handleClick = () => {
+    scroll.scrollTo('one', {
+      duration: 1100,
+      delay: 100,
+      smooth: true,
+    })
+  }
+
   render() {
     return (
-      <section id="intro" className="wrapper style1 fullscreen fade-up">
-        {/* <Video
-          src="https://www.youtube.com/embed/rhGSXj28Gu0"
+      <section id="intro" className="wrapper style1 fullscreen" data-aos="fade">
+        <Video
+          src="https://www.youtube.com/embed/rhGSXj28Gu0?start=26&autoplay=1"
           frameborder="0"
-          allow="autoplay; encrypted-media"
+          volume="0"
+          loop="1"
           allowfullscreen
-        /> */}
-        <div className="inner">
-          <h1>Peymaneh's Design Studio</h1>
-          <p>
-            Just another fine responsive site template designed by{' '}
-            <a href="http://html5up.net">HTML5 UP</a>
+        />
+        <Container className="inner">
+          <h1
+            data-aos="fade-down"
+            data-aos-delay="400"
+            style={{ fontStyle: 'italic' }}
+          >
+            Peymaneh's Design Studio
+          </h1>
+          <h2 data-aos="fade" data-aos-delay="700">
+            Just another fine responsive site template designed by Niki
+            Esfandiari
             <br />
-            and released for free under the{' '}
-            <a href="http://html5up.net/license">Creative Commons</a>.
-          </p>
+            and released for free under the Rithm Patent Law
+          </h2>
           <ul className="actions">
             <li>
-              <a href="#one" className="button scrolly">
+              <a
+                href="#one"
+                className="button"
+                data-aos="fade-up"
+                data-aos-delay="800"
+                onClick={this.handleClick}
+              >
                 Learn more
               </a>
             </li>
           </ul>
-        </div>
+        </Container>
       </section>
     )
   }
