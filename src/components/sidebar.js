@@ -30,31 +30,33 @@ class Sidebar extends Component {
   }
 
   handleScroll = () => {
-    let position = window.scrollY
-    let one = document.getElementById('one').offsetTop
-    let two = document.getElementById('two').offsetTop
-    let three = document.getElementById('three').offsetTop
-    let four = document.getElementById('four').offsetTop
-    if (position > four - 300) {
-      this.setState({
-        status: ['inactive', 'inactive', 'inactive', 'inactive', 'active'],
-      })
-    } else if (position > three - 300) {
-      this.setState({
-        status: ['inactive', 'inactive', 'inactive', 'active', 'inactive'],
-      })
-    } else if (position > two - 300) {
-      this.setState({
-        status: ['inactive', 'inactive', 'active', 'inactive', 'inactive'],
-      })
-    } else if (position > one - 300) {
-      this.setState({
-        status: ['inactive', 'active', 'inactive', 'inactive', 'inactive'],
-      })
-    } else {
-      this.setState({
-        status: ['active', 'inactive', 'inactive', 'inactive', 'inactive'],
-      })
+    if (typeof window !== 'undefined') {
+      let position = window.scrollY
+      let one = document.getElementById('one').offsetTop
+      let two = document.getElementById('two').offsetTop
+      let three = document.getElementById('three').offsetTop
+      let four = document.getElementById('four').offsetTop
+      if (position > four - 300) {
+        this.setState({
+          status: ['inactive', 'inactive', 'inactive', 'inactive', 'active'],
+        })
+      } else if (position > three - 300) {
+        this.setState({
+          status: ['inactive', 'inactive', 'inactive', 'active', 'inactive'],
+        })
+      } else if (position > two - 300) {
+        this.setState({
+          status: ['inactive', 'inactive', 'active', 'inactive', 'inactive'],
+        })
+      } else if (position > one - 300) {
+        this.setState({
+          status: ['inactive', 'active', 'inactive', 'inactive', 'inactive'],
+        })
+      } else {
+        this.setState({
+          status: ['active', 'inactive', 'inactive', 'inactive', 'inactive'],
+        })
+      }
     }
   }
 
