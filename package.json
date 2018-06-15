@@ -23,7 +23,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "heroku-postbuild": "gatsby build"
   },
   "devDependencies": {
     "direction-reveal": "^1.3.2",
