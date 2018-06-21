@@ -17,11 +17,12 @@ class Studio extends Component {
   }
   render() {
     let sections = []
-    sections = this.props.sections.map(section => (
+    sections = this.props.sections.map((section, i) => (
       <StudioSection
         title={section.title}
         description={section.description}
         image={section.image}
+        key={i}
       />
     ))
     return (

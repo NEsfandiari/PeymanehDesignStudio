@@ -37,7 +37,7 @@ class ContactInfo extends Component {
             <h3>Social</h3>
             <ul className="icons">
               <li>
-                <a>
+                <a href="https://www.etsy.com/shop/PeymanehDesigns?ref=seller-platform-mcnav">
                   <FaShoppingBag>
                     <span className="label">ShoppFaShoppingBag</span>
                   </FaShoppingBag>
@@ -51,7 +51,7 @@ class ContactInfo extends Component {
                 </a>
               </li>
               <li>
-                <a>
+                <a href="https://www.instagram.com/peymiesdesignstudio/">
                   <FaInstagram>
                     <span className="label">Instagram</span>
                   </FaInstagram>

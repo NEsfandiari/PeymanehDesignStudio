@@ -16,11 +16,12 @@ class Services extends Component {
   }
   render() {
     let skills = []
-    skills = this.props.services.map(service => (
+    skills = this.props.services.map((service, i) => (
       <Skill
         title={service.title}
         description={service.description}
         icon={service.icon}
+        key={i}
       />
     ))
     return (
