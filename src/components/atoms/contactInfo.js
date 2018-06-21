@@ -31,25 +31,31 @@ class ContactInfo extends Component {
           </li>
           <li>
             <h3>Phone</h3>
-            <span>(925) 286-2521</span>
+            <span>(925) 202-8636</span>
           </li>
           <li>
             <h3>Social</h3>
             <ul className="icons">
               <li>
-                <FaShoppingBag>
-                  <span className="label">ShoppFaShoppingBag</span>
-                </FaShoppingBag>
+                <a>
+                  <FaShoppingBag>
+                    <span className="label">ShoppFaShoppingBag</span>
+                  </FaShoppingBag>
+                </a>
               </li>
               <li>
-                <FaFacebook>
-                  <span className="label">Facebook</span>
-                </FaFacebook>
+                <a href="https://www.facebook.com/peymaneh.esfandiari.1">
+                  <FaFacebook>
+                    <span className="label">Facebook</span>
+                  </FaFacebook>
+                </a>
               </li>
               <li>
-                <FaInstagram>
-                  <span className="label">Instagram</span>
-                </FaInstagram>
+                <a>
+                  <FaInstagram>
+                    <span className="label">Instagram</span>
+                  </FaInstagram>
+                </a>
               </li>
             </ul>
           </li>

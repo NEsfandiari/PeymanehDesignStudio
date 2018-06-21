@@ -21,17 +21,17 @@ class EtsyStore extends Component {
     this.state = {}
   }
 
-  // async componentDidMount() {
-  //   try {
-  //     let data = await axios.get(
-  //       'https://openapi.etsy.com/v2/shops/PeymanehDesigns/listings/active.js?api_key=ezs05dfqp9n6hcv0bef9us2r&includes=MainImage&fields=url,price,title,shop_section_id,description&limit=100',
-  //       { headers: { AccessControlAllowOrigin: '*' } }
-  //     )
-  //     console.log(data)
-  //   } catch (e) {
-  //     console.log(e)
-  //   }
-  // }
+  async componentDidMount() {
+    try {
+      let data = await axios.get(
+        'https://openapi.etsy.com/v2/shops/PeymanehDesigns/listings/active.js?api_key=ezs05dfqp9n6hcv0bef9us2r&includes=MainImage&fields=url,price,title,shop_section_id,description&limit=100',
+        { headers: { AccessControlAllowOrigin: '*' } }
+      )
+      console.log(data)
+    } catch (e) {
+      console.log(e)
+    }
+  }
 
   render() {
     return (

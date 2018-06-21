@@ -59,12 +59,16 @@ class Intro extends Component {
           >
             Peymaneh's Design Studio
           </h1>
-          <h2 data-aos="fade" data-aos-delay="700">
+          <h3
+            data-aos="fade"
+            data-aos-delay="700"
+            style={{ fontSize: '1.5rem' }}
+          >
             Just another fine responsive site template designed by Niki
             Esfandiari
             <br />
             and released for free under the Rithm Patent Law
-          </h2>
+          </h3>
           <ul className="actions">
             <li>
               <a
