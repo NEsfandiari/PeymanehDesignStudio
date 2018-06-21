@@ -11,15 +11,15 @@ class ContactForm extends Component {
       <section data-aos="fade-right" data-aos-delay="200">
         <form method="post" action="#">
           <div className="field half first">
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" />
           </div>
           <div className="field half">
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input type="text" name="email" id="email" />
           </div>
           <div className="field">
-            <label for="message">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea name="message" id="message" rows="5" />
           </div>
           <ul className="actions">

@@ -26,7 +26,9 @@ class Sidebar extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    if (typeof window !== `undefined`) {
+      window.addEventListener('scroll', this.handleScroll)
+    }
   }
 
   handleScroll = () => {
