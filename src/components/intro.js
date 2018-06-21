@@ -48,6 +48,7 @@ class Intro extends Component {
           src="https://www.youtube.com/embed/rhGSXj28Gu0?start=26&autoplay=1"
           frameborder="0"
           volume="0"
+          autoplay="1"
           loop="1"
           allowfullscreen
         />

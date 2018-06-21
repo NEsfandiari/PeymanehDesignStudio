@@ -17,7 +17,6 @@ const Wrapper = Styled.div`
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  /* font-family: 'Cormorant'; */
   font-family: 'EB Garamond';
   overflow-x: hidden;
 `
