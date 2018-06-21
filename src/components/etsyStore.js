@@ -21,12 +21,15 @@ class EtsyStore extends Component {
     this.state = {}
   }
 
-  async componentDidMount() {
+  componentDidMount() {
+    let data
     try {
-      let data = await axios.get(
-        'https://openapi.etsy.com/v2/shops/PeymanehDesigns/listings/active.js?api_key=ezs05dfqp9n6hcv0bef9us2r&includes=MainImage&fields=url,price,title,shop_section_id,description&limit=100',
-        { headers: { AccessControlAllowOrigin: '*' } }
-      )
+      axios
+        .get(
+          'https://openapi.etsy.com/v2/shops/PeymanehDesigns/listings/active.js?api_key=ezs05dfqp9n6hcv0bef9us2r&includes=MainImage&fields=url,price,title,shop_section_id,description&limit=100',
+          { headers: { AccessControlAllowOrigin: '*' } }
+        )
+        .then(result => (data = result))
       console.log(data)
     } catch (e) {
       console.log(e)
