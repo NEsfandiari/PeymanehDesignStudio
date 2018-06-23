@@ -48,10 +48,7 @@ class ItemCard extends Component {
         data-aos="zoom-in-right"
         data-aos-delay={this.props.delay}
       >
-        <a
-          className="direction-reveal__card"
-          href="https://www.etsy.com/listing/534813468/amethyst-silk-knotted-pendant?utm_source=peymaneh39sdesignstu&utm_medium=api&utm_campaign=api"
-        >
+        <a className="direction-reveal__card" href={this.props.url}>
           <div className="direction-reveal__overlay direction-reveal__anim--in">
             <h2 className=".direction-reveal__text">{this.props.text}</h2>
           </div>

@@ -44,7 +44,7 @@ class IndexPage extends Component {
             <Intro />
             <Studio />
             <Services />
-            <EtsyStore />
+            <EtsyStore data={this.props.data} />
             <Contact />
             <Footer />
           </Inner>
@@ -55,3 +55,17 @@ class IndexPage extends Component {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query EtsyItemQuery {
+    allEtsyItem {
+      edges {
+        node {
+          title
+          url
+          image
+        }
+      }
+    }
+  }
+`

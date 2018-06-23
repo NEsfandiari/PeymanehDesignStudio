@@ -51,7 +51,7 @@ class ContactInfo extends Component {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/peymiesdesignstudio/">
+                <a href="https://www.instagram.com/peymiebg/">
                   <FaInstagram>
                     <span className="label">Instagram</span>
                   </FaInstagram>
