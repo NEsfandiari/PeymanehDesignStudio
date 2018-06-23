@@ -10,7 +10,7 @@ class Footer extends Component {
       <footer id="footer" className="wrapper style1-alt">
         <div className="inner">
           <ul className="menu">
-            <li>&copy; Untitled. All rights reserved.</li>
+            <li>&copy; Peymaneh's Design Studio. All rights reserved.</li>
             <li>
               Created By:{' '}
               <a href="https://nikiesfandiari-portfolio.herokuapp.com/">

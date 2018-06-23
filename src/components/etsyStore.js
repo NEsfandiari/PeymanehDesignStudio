@@ -3,7 +3,12 @@ import Styled from 'styled-components'
 import ItemCard from './atoms/itemCard'
 
 const Header = Styled.h1`
-    margin-left: 21vw;
+    margin-left: 24vw;
+
+    @media(max-width: 600px) {
+        margin-left: 14vw
+    }
+
     @media(min-width: 1280px) {
         margin-left: 18vw
     }

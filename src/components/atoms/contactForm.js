@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
-import AOS from 'aos'
 
 class ContactForm extends Component {
   constructor(props) {
     super(props)
     this.state = {}
   }
+
+  onSubmit() {}
+
   render() {
     return (
       <section data-aos="fade-right" data-aos-delay="200">
-        <form method="post" action="#">
+        <form method="post" action="#" onSubmit={this.onSubmit}>
           <div className="field half first">
             <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" />

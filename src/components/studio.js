@@ -5,6 +5,9 @@ import StudioSection from './atoms/studioSection'
 const Header = Styled.h1`
     margin-left: 20vw;
     margin-bottom: 0;
+    @media(max-width: 600px) {
+        margin-left: 16vw
+    }
     @media(min-width: 1280px) {
         margin-left: 15vw
     }

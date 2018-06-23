@@ -19,6 +19,17 @@ const Video = Styled.iframe`
 `
 const Container = Styled.div`
   position: absolute;
+
+  h1{
+    font-style: italic;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    @media (max-width: 736px){
+      font-size: 1rem
+    }
+  }
 `
 
 class Intro extends Component {
@@ -53,18 +64,10 @@ class Intro extends Component {
           allowfullscreen
         />
         <Container className="inner">
-          <h1
-            data-aos="fade-down"
-            data-aos-delay="400"
-            style={{ fontStyle: 'italic' }}
-          >
+          <h1 data-aos="fade-down" data-aos-delay="400">
             Peymaneh's Design Studio
           </h1>
-          <h3
-            data-aos="fade"
-            data-aos-delay="700"
-            style={{ fontSize: '1.5rem' }}
-          >
+          <h3 data-aos="fade" data-aos-delay="700">
             Just another fine responsive site template designed by Niki
             Esfandiari
             <br />

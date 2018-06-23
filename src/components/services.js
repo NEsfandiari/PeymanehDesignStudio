@@ -3,7 +3,10 @@ import Styled from 'styled-components'
 import Skill from './atoms/skill'
 
 const Header = Styled.h1`
-    margin-left: 23vw;
+    margin-left: 25vw;
+    @media(max-width: 600px) {
+        margin-left: 16vw
+    }
     @media(min-width: 1280px) {
         margin-left: 20vw
     }
