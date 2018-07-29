@@ -1,6 +1,15 @@
 import React, { Component } from 'react'
 import Styled from 'styled-components'
 
+const Container = Styled.section`
+  p{
+    margin-bottom: 0rem;
+  }
+  @media (max-width: 500px){
+    flex-direction: column !important;
+  }
+`
+
 const Image = Styled.img`
   width: 22rem;
   height: 25rem;
@@ -9,8 +18,10 @@ const Image = Styled.img`
     height: 16rem;
   }
   @media (max-width: 500px){
-    width: 9rem;
-    height: 10rem;
+    width: 13rem;
+    height: 14rem;
+    margin-bottom: 1rem;
+
   }
   margin-right: 1.5rem;
   border-radius: 30px 30px 30px 30px;
@@ -25,7 +36,7 @@ class StudioSection extends Component {
 
   render() {
     return (
-      <section style={{ display: 'flex', alignItems: 'center' }}>
+      <Container style={{ display: 'flex', alignItems: 'center' }}>
         <div className="content" data-aos="fade-up" data-aos-delay="200">
           <div className="inner">
             <h2>{this.props.title}</h2>
@@ -39,7 +50,7 @@ class StudioSection extends Component {
           data-aos="fade-left"
           data-aos-delay="400"
         />
-      </section>
+      </Container>
     )
   }
 }
