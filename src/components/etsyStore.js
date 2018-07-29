@@ -53,12 +53,13 @@ class EtsyStore extends Component {
         style={{ backgroundColor: '#201046' }}
       >
         <div className="inner">
-          <Header>Peymaneh's Designs</Header>
+          <Header>Peymaneh's Design's</Header>
           <p data-aos="zoom-in" data-aos-delay="100">
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
+            Click Through to see these listings on my Etsy Store! I like using
+            vintage jewelry (often deconstructed or broken), crystals, stones
+            with fabric, and metal wire to create new looks current with today’s
+            fashion trends. Choose your own crystals or stones for the desired
+            vibration..
           </p>
           <Products>{items}</Products>
         </div>

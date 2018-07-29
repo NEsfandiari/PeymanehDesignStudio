@@ -13,12 +13,7 @@ class Contact extends Component {
       <section id="four" className="wrapper style1 fade-up" data-aos="fade">
         <div className="inner">
           <h2>Let's Chat!</h2>
-          <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
-          </p>
+          <p>“Inside you there’s an artist you don’t know about.” -Rumi</p>
           <div className="split style1">
             <ContactForm />
             <ContactInfo />

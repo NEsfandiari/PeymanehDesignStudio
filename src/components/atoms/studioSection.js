@@ -30,13 +30,6 @@ class StudioSection extends Component {
           <div className="inner">
             <h2>{this.props.title}</h2>
             <p>{this.props.description}</p>
-            <ul className="actions">
-              <li>
-                <a href="#" className="button">
-                  Learn more
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
         <Image

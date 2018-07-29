@@ -42,19 +42,13 @@ class Services extends Component {
             What I Can Do
           </h2>
           <p data-aos="zoom-in" data-aos-delay="100">
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
+            With over 30+ years experience in Fashion and Interior Design, you
+            cultivate an outfit or look that finally reaches the extent of your
+            imagination. Skip the cut and paste service you'll get from stores
+            and take anything from your own closet or living room into a
+            showcase of your best self!
           </p>
           <div className="features">{skills}</div>
-          <ul className="actions">
-            <li>
-              <a href="#" className="button">
-                Learn more
-              </a>
-            </li>
-          </ul>
         </div>
       </section>
     )
@@ -68,37 +62,37 @@ Services.defaultProps = {
     {
       title: 'Jewelery',
       description:
-        'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.',
+        'Why not transform Grandma’s brooch into a modern piece or add crystals or stones to an old piece of jewelry you no longer wear?',
       icon: 'diamond',
     },
     {
       title: 'Upholstrey',
       description:
-        'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.',
+        "Let's revamp that wingback chair or antique couch you bought at the local yard sale. I'll take any a piece of furniture to best reflect your sense of style and interior design.",
       icon: 'star',
     },
     {
       title: 'Tailoring',
       description:
-        'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.',
+        'Transform your wardrobe by combining pieces in innovative and creative ways that showcase who you are!',
       icon: 'cut',
     },
     {
       title: 'Fabric Design',
       description:
-        'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.',
+        "Using jacquard dyes and a water soluble resist, we'll create a sample piece that you can then use to create any garment or scarf of your liking (silk or cotton).",
       icon: 'object-group',
     },
     {
       title: 'Gown Alterations',
       description:
-        'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.',
+        'Don’t settle for an ill-fitting gown. Feel perfect in the perfect fit for you! Look as fabulous as you want for your wedding day or special occasion!',
       icon: 'female',
     },
     {
       title: 'Acessory Design',
       description:
-        'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.',
+        "Got a unqiue vision for something truly original? For 30+ years I have been making custom one-of-kind pieces. Let's create something truly spectacular!",
       icon: 'gift',
     },
   ],

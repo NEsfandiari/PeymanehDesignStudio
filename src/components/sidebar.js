@@ -13,7 +13,6 @@ const Image = Styled.img`
   }
   height: 6rem;
   width: 18vw;
-  border-radius: 25px 25px 25px 25px;
   box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.7);
 `
 

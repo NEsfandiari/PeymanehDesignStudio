@@ -4,7 +4,6 @@ import DirectionReveal from 'direction-reveal'
 import 'direction-reveal/styles/direction-reveal.scss'
 
 const Card = Styled.div`
-  border-radius: 30px 30px 30px 30px;
   a{
     text-decoration: none;
     height: 95%;

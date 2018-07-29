@@ -56,7 +56,7 @@ class Intro extends Component {
     return (
       <section id="intro" className="wrapper style1 fullscreen" data-aos="fade">
         <Video
-          src="https://www.youtube.com/embed/rhGSXj28Gu0?start=26&autoplay=1"
+          src=""
           frameborder="0"
           volume="0"
           autoplay="1"
@@ -68,10 +68,10 @@ class Intro extends Component {
             Peymaneh's Design Studio
           </h1>
           <h3 data-aos="fade" data-aos-delay="700">
-            Just another fine responsive site template designed by Niki
-            Esfandiari
+            Are you ready to show the world who you really are?
             <br />
-            and released for free under the Rithm Patent Law
+            "Somewhere, something incredible is waiting to be known." -Carl
+            Sagan
           </h3>
           <ul className="actions">
             <li>
@@ -82,7 +82,7 @@ class Intro extends Component {
                 data-aos-delay="800"
                 onClick={this.handleClick}
               >
-                Learn more
+                Explore
               </a>
             </li>
           </ul>
