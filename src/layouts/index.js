@@ -11,7 +11,16 @@ const Container = styled.div`
 
 const Layout = ({ children }) => (
   <Container>
-    <Helmet />
+    <Helmet
+      title="Peymahneh's Design Studio"
+      link={[
+        {
+          rel: 'Design Icon',
+          type: 'image/png',
+          href: `http://sisterhoodevent.com/wp-content/uploads/2018/04/cropped-Dress-for-success-favicon-270x270.png`,
+        },
+      ]}
+    />
     {children()}
   </Container>
 )
