@@ -19,7 +19,9 @@ const Video = Styled.iframe`
 `
 const Container = Styled.div`
   position: absolute;
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   h1{
     font-style: italic;
   }
@@ -28,6 +30,7 @@ const Container = Styled.div`
     font-size: 1.5rem;
     @media (max-width: 736px){
       font-size: 1rem
+      width: 90%;
     }
   }
 `

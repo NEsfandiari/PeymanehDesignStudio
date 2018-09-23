@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Styled from 'styled-components'
 
 const Container = Styled.section`
+    text-align: center;
   p{
     margin-bottom: 0rem;
   }
@@ -21,11 +22,10 @@ const Image = Styled.img`
     width: 13rem;
     height: 14rem;
     margin-bottom: 1rem;
-
+    margin-right: 0;
   }
   margin-right: 1.5rem;
-  border-radius: 30px 30px 30px 30px;
-  box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.7);
 `
 
 class StudioSection extends Component {

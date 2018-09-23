@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { FaShoppingBag, FaFacebook, FaInstagram } from 'react-icons/lib/fa'
-import AOS from 'aos'
 
 class ContactInfo extends Component {
   constructor(props) {
@@ -30,6 +29,7 @@ class ContactInfo extends Component {
                 <a
                   href="https://www.etsy.com/shop/PeymanehDesigns?ref=seller-platform-mcnav"
                   target="_blank"
+                  rel="noopener"
                 >
                   <FaShoppingBag>
                     <span className="label">ShoppFaShoppingBag</span>
@@ -40,6 +40,7 @@ class ContactInfo extends Component {
                 <a
                   href="https://www.facebook.com/peymaneh.esfandiari.1"
                   target="_blank"
+                  rel="noopener"
                 >
                   <FaFacebook>
                     <span className="label">Facebook</span>
@@ -47,7 +48,11 @@ class ContactInfo extends Component {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/peymiebg/" target="_blank">
+                <a
+                  href="https://www.instagram.com/peymiebg/"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <FaInstagram>
                     <span className="label">Instagram</span>
                   </FaInstagram>

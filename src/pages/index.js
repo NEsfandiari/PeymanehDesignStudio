@@ -19,6 +19,9 @@ const Wrapper = Styled.div`
   align-items: flex-end;
   font-family: 'EB Garamond';
   overflow-x: hidden;
+  img{
+    border-radius: 5px;
+  }
 `
 const Inner = Styled.div`
   @media (min-width: 1280px){

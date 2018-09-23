@@ -12,10 +12,13 @@ const Header = Styled.h1`
 const Container = Styled.div`
     display: flex;
     flex-direction:column;
-    align-items:center;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    .actions{
+      margin: .75rem;
+    }
     a{
-      width: 30vw
+      width: 15vw
       min-width: 10rem;
     }
 `
@@ -75,14 +78,13 @@ Studio.defaultProps = {
     {
       title: 'Learn Better',
       description:
-        "I have over 30+ years of experience in Fashion after graduating La Chambre Syndicale de la Couture Parisienne in Paris in the 80's; the last 16 years of which I have been teaching Fashion Design to local students here in the Bay Area. I will guide you through the Fashion Design process from sketching, to pattern-making, draping, cutting and finally fitting a garment (or several).",
+        "I have over 30+ years of experience in fashion after graduating from La Chambre Syndicale de la Couture Parisienne Paris in the 80's. In the last 16 years I have been teaching fashion design to local students here in the Bay Area. I will guide you through the Fashion Design process from sketching, to pattern-making, draping, cutting and finally fitting a garment (or several).",
       image:
         'http://www.hamstech.com/blog/wp-content/uploads/2017/07/fashion-designing-730x410.jpg',
     },
     {
       title: 'Be Fabulous',
       description: `Your hard work will be showcased in our annual Spring Runway Show. 
-
         “What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.” - Miuccia Prada`,
       image:
         'https://upload.wikimedia.org/wikipedia/commons/8/86/Rosenthal_Tee_Final_Design_2016_SS.jpg',
